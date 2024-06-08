@@ -22,6 +22,12 @@
                     <DataTemplate>
 
                         <Border BorderBrush="Black" BorderThickness="1">
+                            <Border.ContextMenu>
+                                <ContextMenu>
+                                    <MenuItem Header="Вывести сведения" Click="Info_Click"></MenuItem>
+                                    <MenuItem Header="Предупреждение" Click="Warning_Click"></MenuItem>
+                                </ContextMenu>
+                            </Border.ContextMenu>
                             <Grid Width="188" Height="310">
 
                                 <Image Height="139" Width="167" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0"/>
@@ -30,12 +36,7 @@
                                 <TextBlock HorizontalAlignment="Left" Margin="12,222,0,0" TextWrapping="Wrap" Text="{Binding LastName}" VerticalAlignment="Top" Height="27" Width="164"/>
                                 <Button Content="Подробнее" Margin="0,270,0,-1" />
                             </Grid>
-                            <Border.ContextMenu>
-                                <ContextMenu>
-                                    <MenuItem Header="Вывести сведения" Click="Info_Click"></MenuItem>
-                                    <MenuItem Header="Предупреждение" Click="Warning_Click"></MenuItem>
-                                </ContextMenu>
-                            </Border.ContextMenu>
+                           
                         </Border>
                     </DataTemplate>
                 </ListView.ItemTemplate>
