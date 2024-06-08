@@ -31,7 +31,28 @@ namespace Air
         public void List_Reload()
         {
             var userList = db.Users.ToList();
-            // ссылка на объект разметки, передаем туда лист юзеров
+            ListCheck.SelectedValuePath = "ID";
+            ListCheck.ItemsSource = userList;
+            ListCheck.SelectionMode = SelectionMode.Single;
+        }
+
+        private void Info_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("INFO", "User Info", MessageBoxButton.OK, MessageBoxImage.Information);
+        }        
+
+        private void Warning_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Warning", "User warn", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    Console.WriteLine("Yes");
+                    break;
+                case MessageBoxResult.No:
+                    Console.WriteLine("No");
+                    break;
+            }
         }
     }
 }
