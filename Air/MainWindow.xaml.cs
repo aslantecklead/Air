@@ -37,6 +37,7 @@ namespace Air
         public void List_Reload()
         {
             var userList = db.Users.ToList();
+            ListCheck.Items.Clear();
             ListCheck.SelectedValuePath = "ID";
             ListCheck.ItemsSource = userList;
             ListCheck.SelectionMode = SelectionMode.Single;

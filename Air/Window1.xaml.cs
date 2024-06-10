@@ -23,7 +23,8 @@ namespace Air
         {
             InitializeComponent();
             Email.Text = user.Email;
-            Name.Text = user.FirstName;
+            string _fullName = user.FirstName + " " + user.LastName;
+            Name.Text = _fullName;
             Password.Text = user.Password;
         }
 

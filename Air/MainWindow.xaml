@@ -58,7 +58,7 @@
                         </TransformGroup>
                     </DatePicker.RenderTransform>
                 </DatePicker>
-                <RadioButton x:Name="Role" FontSize="18" Content="Роль админа" HorizontalAlignment="Left" Margin="348,230,0,0" VerticalAlignment="Top" Height="20" Width="140" RenderTransformOrigin="1.098,0.152"/>
+                <RadioButton x:Name="Role" FontSize="18" Content="Роль админа" HorizontalAlignment="Left" Margin="348,230,0,0" VerticalAlignment="Top" Height="20" Width="162" RenderTransformOrigin="1.098,0.152"/>
                 <Button x:Name="Add" FontSize="18" Content="Add" HorizontalAlignment="Left" Margin="945,26,0,0" VerticalAlignment="Top" Width="245" Click="Add_Click" Height="60"/>
                 <Button x:Name="Update" FontSize="18" Content="Update" HorizontalAlignment="Left" Margin="945,94,0,0" VerticalAlignment="Top" Width="245" Click="Update_Click" Height="60"/>
                 <Button x:Name="Delete" FontSize="18" Content="Delete" HorizontalAlignment="Left" Margin="945,165,0,0" VerticalAlignment="Top" Width="245" Click="Delete_Click" Height="60"/>
