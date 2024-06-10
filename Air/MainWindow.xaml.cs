@@ -170,5 +170,24 @@ namespace Air
                 File.Copy(openFileDialog.FileName, Directory.GetCurrentDirectory() + "/Photo/" + openFileDialog.SafeFileName);
             }
         }
+
+        private void Information_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                Grid grid = button.Parent as Grid;
+                if (grid != null)
+                {
+                    Users user = grid.DataContext as Users;
+                    if (user != null)
+                    {
+                        Window1 window = new Window1(user);
+                        window.Show();
+                        this.Close();
+                    }
+                }
+            }
+        }
     }
 }
