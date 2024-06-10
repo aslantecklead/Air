@@ -116,6 +116,7 @@ namespace Air
                 selectedItem.FirstName = First_Name.Text;
                 selectedItem.Password = Password.Text;
                 selectedItem.Birthdate = Birthday.SelectedDate.Value;
+                selectedItem.OfficeID = (int)Offices.SelectedValue;
                 db.SaveChanges();
                 List_Reload();
             }
