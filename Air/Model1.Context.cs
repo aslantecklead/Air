@@ -13,10 +13,10 @@ namespace Air
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Session1_XXEntities : DbContext
+    public partial class Session1_XXEntities1 : DbContext
     {
-        public Session1_XXEntities()
-            : base("name=Session1_XXEntities")
+        public Session1_XXEntities1()
+            : base("name=Session1_XXEntities1")
         {
         }
     
