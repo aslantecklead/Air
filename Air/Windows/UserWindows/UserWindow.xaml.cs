@@ -23,5 +23,12 @@ namespace Air.Windows.UserWindows
         {
             InitializeComponent();
         }
+
+        private void DataUsers_Click(object sender, RoutedEventArgs e)
+        {
+            DataUsers dataUsers = new DataUsers();
+            dataUsers.Show();
+            // Close();
+        }
     }
 }
