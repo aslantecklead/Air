@@ -19,14 +19,25 @@ namespace Air
     /// </summary>
     public partial class Window1 : Window
     {
-        public Window1()
+        public Window1(Users user)
         {
             InitializeComponent();
+            Email.Text = user.Email;
+            string _fullName = user.FirstName + " " + user.LastName;
+            Name.Text = _fullName;
+            Password.Text = user.Password;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void BackToMain_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }

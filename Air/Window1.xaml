@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Air"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="1200">
     <Grid>
-        <Border BorderBrush="Black" Width="188" Height="310" BorderThickness="1" VerticalAlignment="Top" HorizontalAlignment="Left">
-            <Button Content="Подробнее" Margin="0,270,0,-1" Click="Button_Click"/>
-        </Border>
-        <Image Height="139" Width="167" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0"/>
-        <TextBlock HorizontalAlignment="Left" Margin="12,155,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="27" Width="163"/>
-        <TextBlock HorizontalAlignment="Left" Margin="12,190,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="27" Width="164"/>
-        <TextBlock HorizontalAlignment="Left" Margin="12,222,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="27" Width="164"/>
-
+        <Image Height="271" Width="272" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="890,17,0,0"/>
+        <TextBlock x:Name="Name" FontSize="23" HorizontalAlignment="Left" Margin="38,176,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="62" Width="580"/>
+        <TextBlock x:Name="Email" FontSize="23" HorizontalAlignment="Left" Margin="38,287,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="62" Width="580"/>
+        <TextBlock x:Name="Password" FontSize="23" HorizontalAlignment="Left" Margin="38,392,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="62" Width="580"/>
+        <Button x:Name="BackToMain" IsCancel="True" FontSize="23" Content="Назад" HorizontalAlignment="Left" Margin="38,17,0,0" VerticalAlignment="Top" Height="55" Width="136" Click="BackToMain_Click"/>
+        <Label Content="ФИО сотрудника:" FontSize="20" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="38,130,0,0" VerticalAlignment="Top" Width="239"/>
+        <Label Content="Электронная почта:" FontSize="20" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="38,238,0,0" VerticalAlignment="Top" Width="239"/>
+        <Label Content="Пароль:" FontSize="20" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="38,349,0,0" VerticalAlignment="Top" Width="239"/>
     </Grid>
 </Window>

@@ -2,8 +2,17 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Air"
-             StartupUri="MainWindow.xaml">
+             StartupUri="/Windows/UserWindows/UserWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="ListViewItem">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Roles.Title}" Value="Administrator">
+                    <Setter Property="Background" Value="LightGreen"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Active}" Value="False">
+                    <Setter Property="Background" Value="LightPink"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
     </Application.Resources>
 </Application>
